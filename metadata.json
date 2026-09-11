@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Remix: TrustyYellowCab-Driver",
+  "description": "Taxi Meter for Trusty Yellow Cab with real-time GPS tracking, background mode, and PDF receipts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

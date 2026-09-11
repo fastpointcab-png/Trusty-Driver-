@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">Trusty Driver</string>
+
+    <!-- Navigation & Tabs -->
+    <string name="nav_home">HOME</string>
+    <string name="nav_meter">METER</string>
+    <string name="nav_history">HISTORY</string>
+    <string name="nav_settings">SETTINGS</string>
+
+    <!-- Core UI Headers -->
+    <string name="dashboard">Dashboard</string>
+    <string name="new_trip">New Trip</string>
+    <string name="my_trips">My Trips</string>
+    <string name="trip_history">Trip History</string>
+    <string name="earnings">Earnings</string>
+    <string name="todays_earnings">Today\'s Earnings</string>
+    <string name="profile">Profile</string>
+    <string name="driver_profile">Driver Profile</string>
+    <string name="settings">Settings</string>
+    <string name="notifications">Notifications</string>
+    <string name="logout">Logout</string>
+    <string name="driver_status">Driver Status</string>
+    <string name="vehicle_details">Vehicle Details</string>
+    <string name="customer_details">Customer Details</string>
+    <string name="pickup_location">Pickup Location</string>
+    <string name="drop_location">Drop Location</string>
+    <string name="call_customer">Call Customer</string>
+    <string name="call_office">Call Office</string>
+    <string name="navigation">Navigation</string>
+    <string name="navigate_pickup">Navigate Pickup</string>
+    <string name="navigate_drop">Navigate Drop</string>
+
+    <!-- Duty Status & Actions -->
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="duty_on">DUTY ON</string>
+    <string name="duty_off">DUTY OFF</string>
+    <string name="duty_online_desc">You are Online. Ready to receive trips.</string>
+    <string name="duty_offline_desc">You are Offline. Turn duty ON to receive trips.</string>
+
+    <!-- Trip Actions -->
+    <string name="accept_trip">Accept Trip</string>
+    <string name="reject_trip">Cancel Trip</string>
+    <string name="btn_accept">ACCEPT</string>
+    <string name="btn_accepting">ACCEPTING...</string>
+    <string name="btn_skip">SKIP</string>
+    <string name="btn_ignore">IGNORE</string>
+    <string name="start_trip">Start Trip</string>
+    <string name="btn_start_trip">START TRIP</string>
+    <string name="complete_trip">Complete Trip</string>
+    <string name="end_trip">End Trip</string>
+    <string name="btn_end_trip">END TRIP</string>
+    <string name="start_taxi_meter">START TAXI METER</string>
+    <string name="reached_pickup">REACHED PICKUP</string>
+    <string name="office_call">OFFICE CALL</string>
+    <string name="btn_back">BACK</string>
+    <string name="btn_call">CALL</string>
+    <string name="btn_navigate">NAVIGATE</string>
+
+    <!-- Verification / OTP -->
+    <string name="passenger_otp">Passenger OTP</string>
+    <string name="enter_otp_hint">Enter passenger 4-digit OTP to start taxi meter.</string>
+    <string name="verified_ready">Verified! Ready to start taxi meter.</string>
+    <string name="incorrect_otp">Incorrect OTP. Ask the passenger for correct OTP.</string>
+
+    <!-- Trip Details Labels -->
+    <string name="customer">Customer</string>
+    <string name="vehicle_type">Vehicle Type</string>
+    <string name="trip_id">TRIP ID</string>
+    <string name="fare_estimate">Estimated Fare</string>
+    <string name="payment_mode">Payment Mode</string>
+    <string name="cash">Cash</string>
+    <string name="digital_pay">Digital Pay</string>
+    <string name="available_trips">Available Trips</string>
+    <string name="no_trips_available">No trips currently available</string>
+
+    <!-- Language Settings -->
+    <string name="language_settings">Language / மொழி</string>
+    <string name="select_language"></string>
+    <string name="language_english">English</string>
+    <string name="language_tamil">தமிழ் (Tamil)</string>
+    <string name="language_applied">Language updated successfully</string>
+
+    <!-- Additional UI Details -->
+    <string name="driver_name">Driver Name</string>
+    <string name="vehicle_number">Vehicle Number</string>
+    <string name="vehicle_category">Vehicle Category</string>
+    <string name="save_details">Save Details</string>
+    <string name="login">Login</string>
+    <string name="distance">Distance</string>
+    <string name="duration">Duration</string>
+    <string name="fare">Fare</string>
+    <string name="speed">Speed</string>
+    <string name="standby">Standby</string>
+    <string name="total_trips">Total Trips</string>
+    <string name="total_earnings">Total Earnings</string>
+
+    <!-- Loading, Success & Error Messages -->
+    <string name="loading">Loading...</string>
+    <string name="loading_trips">Fetching available trips...</string>
+    <string name="error">Error</string>
+    <string name="error_network">Network error, please check connection</string>
+    <string name="error_invalid_details">Please enter valid details</string>
+    <string name="trip_already_taken">Trip Already Taken: Another driver accepted this trip first.</string>
+    <string name="trip_accepted_success">Trip Accepted! Navigate to pickup.</string>
+    <string name="trip_completed_success">Trip Completed successfully!</string>
+
+    <!-- Notification Strings -->
+    <string name="notif_new_trip_title">NEW TRIP AVAILABLE</string>
+    <string name="notif_new_trip_text">New trip request ready for pickup</string>
+    <string name="notif_driver_duty_title">Driver Duty Online</string>
+    <string name="notif_driver_duty_text">Online and ready to receive bookings.</string>
+    <string name="notif_view_trip">VIEW TRIP</string>
+    <string name="notif_trip_in_progress">Trip in Progress</string>
+
+    <!-- Office Payment Strings -->
+    <string name="office_payment_title">Office Payment</string>
+    <string name="office_payment_subtitle"></string>
+    <string name="make_payment">MAKE PAYMENT</string>
+    <string name="pay_office_fee">Pay Office Fee</string>
+    <string name="payment_due">Payment Due</string>
+    <string name="all_clear_dues">No Dues Pending</string>
+    <string name="click_to_pay">CLICK TO PAY VIA UPI</string>
+    <string name="pay_via_upi_desc"></string>
+    <string name="upi_id_label">Office UPI ID</string>
+    <string name="copy_upi">Copy UPI ID</string>
+    <string name="upi_copied">UPI ID copied to clipboard</string>
+    <string name="enter_amount">Enter Payment Amount (₹)</string>
+    <string name="submit_utr_title">Already Paid? Submit UTR / Ref No.</string>
+    <string name="submit_utr_desc">Enter the 12-digit UPI Reference / Transaction ID from your banking app to update the admin panel.</string>
+    <string name="utr_placeholder">Enter 12-digit UPI Ref / UTR No.</string>
+    <string name="btn_submit_utr">SUBMIT PAYMENT CONFIRMATION</string>
+    <string name="utr_submitted_success">Payment details submitted successfully to Admin!</string>
+    <string name="back_to_settings">Back to Settings</string>
+    <string name="sos_call_police">SOS 100</string>
+    <string name="sos_emergency">Emergency Police</string>
+    <string name="alert_office_due_title">OFFICE PAYMENT DUE</string>
+    <string name="alert_office_due_desc">Office fee is pending for your driver account. Please clear your dues.</string>
+    <string name="alert_pay_now">PAY NOW</string>
+</resources>

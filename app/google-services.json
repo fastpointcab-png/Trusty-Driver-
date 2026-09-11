@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "571510849972",
+    "project_id": "trusty-yellow-cab",
+    "storage_bucket": "trusty-yellow-cab.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571510849972:android:59b2d0aebbcd3c1d5e72e1",
+        "android_client_info": {
+          "package_name": "com.trustyyellowcabs.driver"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb1DbYE0pAnzi-pofZj_bp6P5UVVgNpig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

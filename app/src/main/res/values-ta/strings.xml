@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">Trusty Driver</string>
+
+    <!-- Navigation & Tabs -->
+    <string name="nav_home">முகப்பு</string>
+    <string name="nav_meter">மீட்டர்</string>
+    <string name="nav_history">வரலாறு</string>
+    <string name="nav_settings">அமைப்புகள்</string>
+
+    <!-- Core UI Headers -->
+    <string name="dashboard">டாஷ்போர்டு</string>
+    <string name="new_trip">புதிய பயணம்</string>
+    <string name="my_trips">எனது பயணங்கள்</string>
+    <string name="trip_history">பயண வரலாறு</string>
+    <string name="earnings">வருவாய்</string>
+    <string name="todays_earnings">இன்றைய வருவாய்</string>
+    <string name="profile">சுயவிவரம்</string>
+    <string name="driver_profile">ஓட்டுநர் விவரம்</string>
+    <string name="settings">அமைப்புகள்</string>
+    <string name="notifications">அறிவிப்புகள்</string>
+    <string name="logout">வெளியேறு</string>
+    <string name="driver_status">ஓட்டுநர் நிலை</string>
+    <string name="vehicle_details">வாகன விவரங்கள்</string>
+    <string name="customer_details">வாடிக்கையாளர் விவரங்கள்</string>
+    <string name="pickup_location">ஏற்றுமிடம்</string>
+    <string name="drop_location">இறங்குமிடம்</string>
+    <string name="call_customer">வாடிக்கையாளரை அழைக்கவும்</string>
+    <string name="call_office">அலுவலகத்தை அழைக்கவும்</string>
+    <string name="navigation">வழிகாட்டுதல்</string>
+    <string name="navigate_pickup">ஏற்றுமிடத்திற்கு வழிசெலுத்து</string>
+    <string name="navigate_drop">இறங்குமிடத்திற்கு வழிசெலுத்து</string>
+
+    <!-- Duty Status & Actions -->
+    <string name="online">ஆன்லைன்</string>
+    <string name="offline">ஆஃப்லைன்</string>
+    <string name="duty_on">பணி ஆன்</string>
+    <string name="duty_off">பணி ஆஃப்</string>
+    <string name="duty_online_desc">நீங்கள் ஆன்லைனில் உள்ளீர்கள். பயணங்களைப் பெற தயார்.</string>
+    <string name="duty_offline_desc">நீங்கள் ஆஃப்லைனில் உள்ளீர்கள். பயணங்களைப் பெற பணியை ஆன் செய்யவும்.</string>
+
+    <!-- Trip Actions -->
+    <string name="accept_trip">பயணத்தை ஏற்கவும்</string>
+    <string name="reject_trip">பயணத்தை ரத்துசெய்</string>
+    <string name="btn_accept">ஏற்கவும்</string>
+    <string name="btn_accepting">ஏற்கிறது...</string>
+    <string name="btn_skip">தவிர்</string>
+    <string name="btn_ignore">புறக்கணி</string>
+    <string name="start_trip">பயணத்தைத் தொடங்கு</string>
+    <string name="btn_start_trip">பயணத்தைத் தொடங்கு</string>
+    <string name="complete_trip">பயணத்தை முடிக்கவும்</string>
+    <string name="end_trip">பயணத்தை முடிக்கவும்</string>
+    <string name="btn_end_trip">பயணத்தை முடிக்கவும்</string>
+    <string name="start_taxi_meter">டாக்ஸி மீட்டரைத் தொடங்கு</string>
+    <string name="reached_pickup">ஏற்றுமிடத்தை அடைந்தது</string>
+    <string name="office_call">அலுவலக அழைப்பு</string>
+    <string name="btn_back">பின்செல்</string>
+    <string name="btn_call">அழைக்கவும்</string>
+    <string name="btn_navigate">வழிசெலுத்து</string>
+
+    <!-- Verification / OTP -->
+    <string name="passenger_otp">பயணிகள் OTP</string>
+    <string name="enter_otp_hint">டாக்ஸி மீட்டரைத் தொடங்க பயணியின் 4 இலக்க OTP-ஐ உள்ளிடவும்.</string>
+    <string name="verified_ready">சரிபார்க்கப்பட்டது! மீட்டரைத் தொடங்கலாம்.</string>
+    <string name="incorrect_otp">தவறான OTP. பயணியிடம் சரியான OTP-ஐக் கேட்கவும்.</string>
+
+    <!-- Trip Details Labels -->
+    <string name="customer">வாடிக்கையாளர்</string>
+    <string name="vehicle_type">வாகன வகை</string>
+    <string name="trip_id">பயண எண்</string>
+    <string name="fare_estimate">மதிப்பிடப்பட்ட கட்டணம்</string>
+    <string name="payment_mode">கட்டண முறை</string>
+    <string name="cash">பணம் (ரொக்கம்)</string>
+    <string name="digital_pay">டிஜிட்டல் கட்டணம்</string>
+    <string name="available_trips">கிடைக்கும் பயணங்கள்</string>
+    <string name="no_trips_available">தற்போது பயணங்கள் எதுவும் இல்லை</string>
+
+    <!-- Language Settings -->
+    <string name="language_settings">Language / மொழி</string>
+    <string name="select_language"></string>
+    <string name="language_english">English</string>
+    <string name="language_tamil">தமிழ் (Tamil)</string>
+    <string name="language_applied">மொழி வெற்றிகரமாக மாற்றப்பட்டது</string>
+
+    <!-- Additional UI Details -->
+    <string name="driver_name">ஓட்டுநர் பெயர்</string>
+    <string name="vehicle_number">வாகன எண்</string>
+    <string name="vehicle_category">வாகன வகை</string>
+    <string name="save_details">விவரங்களைச் சேமி</string>
+    <string name="login">உள்நுழை</string>
+    <string name="distance">தூரம்</string>
+    <string name="duration">நேரம்</string>
+    <string name="fare">கட்டணம்</string>
+    <string name="speed">வேகம்</string>
+    <string name="standby">காத்திருப்பு</string>
+    <string name="total_trips">மொத்த பயணங்கள்</string>
+    <string name="total_earnings">மொத்த வருவாய்</string>
+
+    <!-- Loading, Success & Error Messages -->
+    <string name="loading">ஏற்றுகிறது...</string>
+    <string name="loading_trips">கிடைக்கும் பயணங்கள் பெறப்படுகின்றன...</string>
+    <string name="error">பிழை</string>
+    <string name="error_network">பிணையப் பிழை, இணைய இணைப்பைச் சரிபார்க்கவும்</string>
+    <string name="error_invalid_details">சரியான விவரங்களை உள்ளிடவும்</string>
+    <string name="trip_already_taken">பயணம் ஏற்கனவே எடுக்கப்பட்டது: மற்றொரு ஓட்டுநர் முன்பே ஏற்றுக்கொண்டார்.</string>
+    <string name="trip_accepted_success">பயணம் ஏற்கப்பட்டது! ஏற்றுமிடத்திற்கு செல்லவும்.</string>
+    <string name="trip_completed_success">பயணம் வெற்றிகரமாக முடிந்தது!</string>
+
+    <!-- Notification Strings -->
+    <string name="notif_new_trip_title">புதிய பயணம் உள்ளது</string>
+    <string name="notif_new_trip_text">புதிய பயணக் கோரிக்கை தயாராக உள்ளது</string>
+    <string name="notif_driver_duty_title">ஓட்டுநர் பணி ஆன்லைன்</string>
+    <string name="notif_driver_duty_text">ஆன்லைனில் உள்ளீர்கள். பயணங்களைப் பெற தயார்.</string>
+    <string name="notif_view_trip">பயணத்தைப் பார்</string>
+    <string name="notif_trip_in_progress">பயணம் நடைபெறுகிறது</string>
+
+    <!-- Office Payment Strings -->
+    <string name="office_payment_title">அலுவலக கட்டணம்</string>
+    <string name="office_payment_subtitle"></string>
+    <string name="make_payment">கட்டணம் செலுத்து</string>
+    <string name="pay_office_fee">அலுவலக கட்டணம் செலுத்தவும்</string>
+    <string name="payment_due">நிலுவைக் கட்டணம்</string>
+    <string name="all_clear_dues">நிலுவைத் தொகை இல்லை</string>
+    <string name="click_to_pay">UPI மூலம் கட்டணம் செலுத்தவும்</string>
+    <string name="pay_via_upi_desc"></string>
+    <string name="upi_id_label">அலுவலக UPI ID</string>
+    <string name="copy_upi">UPI ID நகலெடு</string>
+    <string name="upi_copied">UPI ID நகலெடுக்கப்பட்டது</string>
+    <string name="enter_amount">கட்டணத் தொகையை உள்ளிடவும் (₹)</string>
+    <string name="submit_utr_title">ஏற்கனவே செலுத்திவிட்டீர்களா? UTR எண்ணை உள்ளிடவும்</string>
+    <string name="submit_utr_desc">நிர்வாக குழுவிற்கு தெரிவிக்க உங்கள் வங்கி ஆப்-ன் 12 இலக்க UTR எண்ணை உள்ளிடவும்.</string>
+    <string name="utr_placeholder">12 இலக்க UPI Ref / UTR எண்</string>
+    <string name="btn_submit_utr">கட்டண உறுதிப்படுத்தலைச் சமர்ப்பிக்கவும்</string>
+    <string name="utr_submitted_success">கட்டண விவரங்கள் நிர்வாகிக்கு வெற்றிகரமாக அனுப்பப்பட்டது!</string>
+    <string name="back_to_settings">அமைப்புகளுக்குத் திரும்பு</string>
+    <string name="sos_call_police">SOS 100</string>
+    <string name="sos_emergency">காவல்துறை அவசர எண்</string>
+    <string name="alert_office_due_title">அலுவலக நிலுவைக் கட்டணம்</string>
+    <string name="alert_office_due_desc">உங்கள் கணக்கில் நிலுவைக் கட்டணம் உள்ளது. தயவுசெய்து செலுத்தவும்.</string>
+    <string name="alert_pay_now">கட்டணம் செலுத்து</string>
+</resources>
