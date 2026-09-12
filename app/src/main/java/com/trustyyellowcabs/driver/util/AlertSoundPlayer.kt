@@ -7,6 +7,7 @@ import android.media.MediaPlayer
 import android.net.Uri
 import android.util.Log
 import java.io.File
+import java.io.FileOutputStream
 
 object AlertSoundPlayer {
     private const val TAG = "AlertSoundPlayer"
@@ -48,16 +49,45 @@ object AlertSoundPlayer {
             }
 
             if (!initialized) {
-                val rawId = appContext.resources.getIdentifier("trip_alert", "raw", appContext.packageName)
+                var rawId = appContext.resources.getIdentifier("trip_alert", "raw", appContext.packageName)
+                if (rawId == 0) {
+                    rawId = appContext.resources.getIdentifier("trip_alert", "raw", "com.trustyyellowcab.driver")
+                }
                 if (rawId != 0) {
                     Log.d(TAG, "Playing trip alert from raw resource ID: $rawId")
-                    val afd: AssetFileDescriptor? = appContext.resources.openRawResourceFd(rawId)
-                    if (afd != null) {
-                        player.setDataSource(afd.fileDescriptor, afd.startOffset, afd.length)
-                        afd.close()
-                        player.isLooping = loop
-                        player.prepare()
-                        initialized = true
+                    try {
+                        val afd: AssetFileDescriptor? = appContext.resources.openRawResourceFd(rawId)
+                        if (afd != null) {
+                            player.setDataSource(afd.fileDescriptor, afd.startOffset, afd.length)
+                            afd.close()
+                            player.isLooping = loop
+                            player.prepare()
+                            initialized = true
+                        }
+                    } catch (e: Exception) {
+                        Log.w(TAG, "openRawResourceFd failed for trip_alert (may be compressed in AAB): ${e.message}")
+                    }
+
+                    if (!initialized) {
+                        try {
+                            val cacheFile = File(appContext.cacheDir, "raw_trip_alert.mp3")
+                            if (!cacheFile.exists() || cacheFile.length() == 0L) {
+                                appContext.resources.openRawResource(rawId).use { input ->
+                                    FileOutputStream(cacheFile).use { output ->
+                                        input.copyTo(output)
+                                    }
+                                }
+                            }
+                            if (cacheFile.exists() && cacheFile.length() > 0L) {
+                                player.setDataSource(cacheFile.absolutePath)
+                                player.isLooping = loop
+                                player.prepare()
+                                initialized = true
+                                Log.i(TAG, "Loaded trip_alert from stream cache: ${cacheFile.absolutePath}")
+                            }
+                        } catch (e: Exception) {
+                            Log.w(TAG, "Stream extraction fallback failed for trip_alert: ${e.message}")
+                        }
                     }
                 }
             }
@@ -186,7 +216,10 @@ object AlertSoundPlayer {
             // 3. Check res/raw
             if (!initialized) {
                 for (name in candidateNames) {
-                    val rawId = appContext.resources.getIdentifier(name, "raw", appContext.packageName)
+                    var rawId = appContext.resources.getIdentifier(name, "raw", appContext.packageName)
+                    if (rawId == 0) {
+                        rawId = appContext.resources.getIdentifier(name, "raw", "com.trustyyellowcab.driver")
+                    }
                     if (rawId != 0) {
                         try {
                             val afd: AssetFileDescriptor? = appContext.resources.openRawResourceFd(rawId)
@@ -199,7 +232,29 @@ object AlertSoundPlayer {
                                 break
                             }
                         } catch (e: Exception) {
-                            Log.w(TAG, "Failed reading raw audio $name: ${e.message}")
+                            Log.w(TAG, "Failed reading raw audio $name via afd: ${e.message}")
+                        }
+
+                        if (!initialized) {
+                            try {
+                                val cacheFile = File(appContext.cacheDir, "raw_${name}.mp3")
+                                if (!cacheFile.exists() || cacheFile.length() == 0L) {
+                                    appContext.resources.openRawResource(rawId).use { input ->
+                                        FileOutputStream(cacheFile).use { output ->
+                                            input.copyTo(output)
+                                        }
+                                    }
+                                }
+                                if (cacheFile.exists() && cacheFile.length() > 0L) {
+                                    player.setDataSource(cacheFile.absolutePath)
+                                    player.prepare()
+                                    initialized = true
+                                    Log.i(TAG, "Loaded cancelled/unassigned MP3 from stream cache: ${cacheFile.absolutePath}")
+                                    break
+                                }
+                            } catch (e: Exception) {
+                                Log.w(TAG, "Stream cache fallback failed for $name: ${e.message}")
+                            }
                         }
                     }
                 }

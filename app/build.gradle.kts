@@ -15,8 +15,8 @@ android {
     applicationId = "com.trustyyellowcabs.driver"
     minSdk = 24
     targetSdk = 36
-    versionCode = 1
-    versionName = "1.0"
+    versionCode = 2
+    versionName = "1.1"
 
     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
   }
@@ -35,13 +35,17 @@ android {
     release {
       isCrunchPngs = false
       isMinifyEnabled = true
-      isShrinkResources = true
+      isShrinkResources = false
       proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
       signingConfig = signingConfigs.getByName("release")
     }
     debug {
-      // Use the default debug signing configuration
+      // Uses the default Android SDK debug keystore automatically
     }
+  }
+
+  androidResources {
+    noCompress += listOf("mp3", "wav", "ogg", "m4a", "aac", "opus", "flac")
   }
   compileOptions {
     sourceCompatibility = JavaVersion.VERSION_11

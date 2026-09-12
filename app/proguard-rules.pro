@@ -68,3 +68,12 @@
 -keep class androidx.compose.** { *; }
 -dontwarn androidx.compose.**
 
+# 10. Preserve Raw Audio and Resource Identifiers
+-keepclassmembers class **.R$* {
+    public static <fields>;
+}
+-keep class **.R$raw { *; }
+-keepclassmembers class * {
+    public static final int trip_*;
+}
+
